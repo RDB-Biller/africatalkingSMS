@@ -1,0 +1,23 @@
+# Africa's Talking credentials for this service.
+AT_USERNAME=your_at_username
+AT_API_KEY=your_at_api_key
+
+# Optional registered SMS Sender ID / short code. Leave blank to send from
+# Africa's Talking's shared default sender.
+AT_SENDER_ID=
+
+# "true" forces sandbox mode regardless of username -- useful for testing
+# without spending real SMS credit. username=sandbox also triggers it.
+AT_SANDBOX=false
+
+# Origin(s) allowed to call this API. "*" is fine for a quick test; once
+# the frontend/ app is deployed, set this to its real URL instead, e.g.
+# https://sms-dashboard.up.railway.app
+CORS_ORIGIN=*
+
+# SQLite file path. Railway's own disk does NOT persist across deploys
+# unless you attach a Volume -- if you do, point this at a path under it
+# (e.g. /data/sms_logs.db) so logs survive a redeploy.
+DB_PATH=sms_logs.db
+
+PORT=3000

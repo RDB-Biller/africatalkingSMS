@@ -1,0 +1,14 @@
+# Python (backend, repo root)
+__pycache__/
+*.pyc
+.env
+sms_logs.db
+venv/
+.venv/
+
+# Node / Next.js (frontend/)
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env*.local
+frontend/npm-debug.log*
